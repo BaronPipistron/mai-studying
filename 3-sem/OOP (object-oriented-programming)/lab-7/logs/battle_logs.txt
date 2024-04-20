@@ -1,0 +1,15 @@
+Outlaw_91 {x : 24, y : 76} | killed by | Orc_64 {x : 24, y : 78}
+Werewolf_82 {x : 40, y : 39} | killed by | Outlaw_77 {x : 37, y : 36}
+Outlaw_94 {x : 6, y : 99} | killed by | Orc_95 {x : 12, y : 97}
+Outlaw_97 {x : 88, y : 30} | killed by | Werewolf_98 {x : 95, y : 28}
+Outlaw_57 {x : 78, y : 56} | killed by | Orc_60 {x : 76, y : 49}
+Outlaw_85 {x : 13, y : 62} | killed by | Werewolf_66 {x : 5, y : 64}
+Werewolf_73 {x : 39, y : 38} | killed by | Outlaw_77 {x : 35, y : 38}
+Outlaw_53 {x : 23, y : 92} | killed by | Orc_95 {x : 16, y : 97}
+Outlaw_63 {x : 34, y : 48} | killed by | Orc_50 {x : 37, y : 40}
+Outlaw_89 {x : 79, y : 90} | killed by | Werewolf_52 {x : 70, y : 88}
+Outlaw_56 {x : 60, y : 59} | killed by | Orc_58 {x : 55, y : 57}
+Outlaw_77 {x : 43, y : 39} | killed by | Werewolf_70 {x : 42, y : 40}
+Outlaw_96 {x : 18, y : 83} | killed by | Werewolf_83 {x : 10, y : 89}
+Outlaw_51 {x : 71, y : 93} | killed by | Werewolf_52 {x : 70, y : 88}
+Outlaw_81 {x : 4, y : 8} | killed by | Werewolf_99 {x : 4, y : 10}
