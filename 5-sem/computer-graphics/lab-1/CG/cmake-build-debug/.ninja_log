@@ -1,0 +1,6 @@
+# ninja log v5
+4	5187	7531228920146155	CMakeFiles/CG.dir/main.cpp.obj	17a886b26db8beb3
+1	213	7531321735125905	build.ninja	234a25e5309de66b
+5188	5682	7531228924912448	CG.exe	8c0b8b1bd78ae47e
+11	2983	7527174100322184	CMakeFiles/CG.dir/Window.cpp.obj	cebcd0eeff99b07b
+5	3076	7527199288941244	CMakeFiles/CG.dir/Game.cpp.obj	fc1b42806665becd

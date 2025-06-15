@@ -1,0 +1,5 @@
+C:/Users/Hoang Nguyen/CLionProjects/cg5_/cmake-build-debug/CMakeFiles/cg5_.dir
+C:/Users/Hoang Nguyen/CLionProjects/cg5_/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Hoang Nguyen/CLionProjects/cg5_/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Hoang Nguyen/CLionProjects/cg5_/cmake-build-debug/external_sources/glad/CMakeFiles/edit_cache.dir
+C:/Users/Hoang Nguyen/CLionProjects/cg5_/cmake-build-debug/external_sources/glad/CMakeFiles/rebuild_cache.dir

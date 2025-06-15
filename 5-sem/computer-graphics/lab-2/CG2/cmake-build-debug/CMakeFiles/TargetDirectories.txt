@@ -1,0 +1,3 @@
+C:/Users/Hoang Nguyen/CLionProjects/CG2/cmake-build-debug/CMakeFiles/cg2.dir
+C:/Users/Hoang Nguyen/CLionProjects/CG2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Hoang Nguyen/CLionProjects/CG2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

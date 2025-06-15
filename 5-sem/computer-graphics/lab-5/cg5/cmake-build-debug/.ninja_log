@@ -1,0 +1,11 @@
+# ninja log v5
+1	592	7533178932618892	CMakeFiles/cg5_.dir/main.cpp.obj	ddd7e08e305abb72
+5	3994	7533228125375164	CMakeFiles/cg5_.dir/src/GLWrapper.cpp.obj	620fb3ee8dc3f272
+2838	3207	7533240159484008	cg5_.exe	a946403b12e02b5a
+2	207	7533242436755539	build.ninja	9117cea8e914244a
+5	734	7533204612136284	CMakeFiles/cg5_.dir/external_sources/glad/src/glad.c.obj	463f3e71d064c709
+10	2790	7533229029592959	CMakeFiles/cg5_.dir/src/SceneManager.cpp.obj	ba0579b5ad15c089
+5	1046	7533204249193618	CMakeFiles/cg5_.dir/external_sources/stb_image/stb_image.cpp.obj	fd196e86b5f884ce
+5	2838	7533240155903986	CMakeFiles/cg5_.dir/src/main.cpp.obj	605203c543d96441
+5	2996	7560846226676618	CMakeFiles/cg5_.dir/src/main.cpp.obj	605203c543d96441
+2996	3464	7560846231240213	cg5_.exe	a946403b12e02b5a

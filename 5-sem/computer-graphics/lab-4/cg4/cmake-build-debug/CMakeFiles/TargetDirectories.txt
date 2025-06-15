@@ -1,0 +1,3 @@
+C:/Users/Hoang Nguyen/CLionProjects/cg4/cmake-build-debug/CMakeFiles/cg4.dir
+C:/Users/Hoang Nguyen/CLionProjects/cg4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Hoang Nguyen/CLionProjects/cg4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
