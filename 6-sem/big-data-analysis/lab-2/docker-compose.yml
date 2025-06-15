@@ -1,0 +1,84 @@
+services:
+  postgres:
+    image: 'postgres:15'
+    container_name: 'postgres'
+    environment:
+      POSTGRES_USER: 'user'
+      POSTGRES_PASSWORD: 'password'
+      POSTGRES_DB: 'salesdb'
+    ports:
+      - '5432:5432'
+    volumes:
+      - './postgres-data:/var/lib/postgresql/data'
+
+  spark-master:
+    image: 'bitnami/spark:latest'
+    container_name: 'spark-master'
+    environment:
+      SPARK_MODE: 'master'
+    ports:
+      - '7077:7077'
+      - '8080:8080'
+    depends_on:
+      - 'postgres'
+    volumes:
+      - ./spark-apps:/opt/spark-apps
+      - ./prepared:/opt/bitnami/spark/prepared
+      - ./libs:/opt/bitnami/spark/external-jars
+
+  spark-worker:
+    image: 'bitnami/spark:latest'
+    container_name: 'spark-worker'
+    environment:
+      SPARK_MODE: 'worker'
+      SPARK_MASTER_URL: 'spark://spark-master:7077'
+    depends_on:
+      - 'spark-master'
+    volumes:
+      - ./libs:/opt/bitnami/spark/external-jars
+
+  clickhouse:
+    image: 'yandex/clickhouse-server:latest'
+    container_name: 'clickhouse'
+    ports:
+      - '8123:8123'
+      - '9000:9000'
+    volumes:
+      - './clickhouse-data:/var/lib/clickhouse'
+
+  cassandra:
+    image: 'cassandra:4'
+    container_name: 'cassandra'
+    ports:
+      - '9042:9042'
+
+  neo4j:
+    image: 'neo4j:5'
+    container_name: 'neo4j'
+    environment:
+      NEO4J_AUTH: 'neo4j/password'
+    ports:
+      - '7474:7474'
+      - '7687:7687'
+    volumes:
+      - './neo4j-data:/data'
+
+  mongo:
+    image: 'mongo:6'
+    container_name: 'mongo'
+    ports:
+      - '27017:27017'
+    volumes:
+      - './mongo-data:/data/db'
+
+  valkey:
+    image: 'valkey/valkey:latest'
+    container_name: 'valkey'
+    ports:
+      - '8081:8081'
+    volumes:
+      - './valkey-data:/var/lib/valkey'
+
+networks:
+  default:
+    name: 'lab-network'
