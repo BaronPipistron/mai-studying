@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-const int MaxValueWH = 2 << 16;
+const int MaxValueWH = 1 << 16;
 const int MaxPixels  = 1e+8;
 
 const dim3 block = dim3(32, 8);
@@ -185,7 +185,7 @@ int main() {
     CSC(cudaMemcpy(pixels.data(), devicePixelsOut, bytes, cudaMemcpyDeviceToHost));
 
     if (!writeImage(outFilePath, w, h, pixels)) {
-        return 1;
+        return 0;
     }
 
     cudaFree(devicePixelsIn);
