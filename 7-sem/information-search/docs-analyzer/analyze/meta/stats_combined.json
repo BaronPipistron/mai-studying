@@ -1,0 +1,12 @@
+{
+  "documents": 600,
+  "bytes_raw_total": 135575685,
+  "bytes_text_total": 21173233,
+  "avg_bytes_raw": 225959.475,
+  "avg_bytes_text": 35288.721666666665,
+  "words_min": 22,
+  "words_p50": 987,
+  "words_p90": 7901,
+  "words_p99": 18166,
+  "words_max": 40205
+}
