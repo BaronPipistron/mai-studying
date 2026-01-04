@@ -1,0 +1,20 @@
+services:
+  search:
+    build: .
+    container_name: ir-search-engine
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      MONGO_URI: "mongodb://host.docker.internal:27017"
+      MONGO_DB: "mai_ir_crawler"
+      MONGO_COLLECTION: "documents"
+      INDEX_PATH: "/data/index.bin"
+      ZIPF_PATH: "/data/zipf.csv"
+      PORT: "8080"
+      REINDEX_ON_START: "1"
+    volumes:
+      - search_data:/data
+
+volumes:
+  search_data:

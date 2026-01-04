@@ -1,0 +1,39 @@
+db:
+  connection_string: "mongodb://localhost:27017/"
+  database_name: "mai_ir_crawler"
+  doc_collection: "documents"
+  frontier_collection: "url_frontier"
+
+logic:
+  user_agent: "MAI-IR-Bot/1.0 (IR Lab; contact: you@example.com)"
+  base_delay_sec: 1.0
+  re_crawl_interval_sec: 86400
+  max_retries: 3
+  retry_backoff_sec: 300
+  sleep_on_empty_frontier_sec: 10
+  max_pages_total: 0
+  send_conditional_headers: true
+  store_all_pages: true
+
+  allow_domains:
+    - "habr.com"
+    - "ru.stackoverflow.com"
+
+  seed_urls:
+    - "https://habr.com/ru/all/"
+    - "https://ru.stackoverflow.com/questions"
+
+  rules:
+    habr.com:
+      allow_regex:
+        - "^https://habr\\.com/ru/"
+      disallow_regex:
+        - "^https://habr\\.com/ru/auth/"
+        - "^https://habr\\.com/ru/users/"
+
+    ru.stackoverflow.com:
+      allow_regex:
+        - "^https://ru\\.stackoverflow\\.com/"
+      disallow_regex:
+        - "^https://ru\\.stackoverflow\\.com/users/"
+        - "^https://ru\\.stackoverflow\\.com/account/"
